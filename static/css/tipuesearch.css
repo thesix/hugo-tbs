@@ -7,23 +7,6 @@ http://www.tipue.com/search
 */
 
 
-#tipue_search_input
-{
-    font-size: 13px;
-    line-height: 1.6;
-	color: #333;
-	padding: 12px 12px 12px 40px;
-	width: 170px;
-	border: 1px solid #e2e2e2;
-	border-radius: 0;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-     box-shadow: none; 
-	outline: 0;
-	margin: 0;
-	background: #fff url('/images/search.png') no-repeat 15px 15px;
-}
-
 #tipue_search_content
 {
 	padding-top: 15px;
