@@ -1,0 +1,40 @@
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          {{ $title := .Title }}
+          {{ range .Site.Data.Menu }}
+            {{ if eq $title .name }}
+            <li class="active">
+            {{ else }}
+            <li>
+            {{ end }}
+            <a href="{{ .url | absURL }}">{{ .name }}</a>
+            </li>
+            {{ end }}
+            <li class="dropdown">
+            <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">aktuell <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              {{ range first 15 .Site.Pages }}
+              <li><a href="{{ .Permalink }}">{{ .Title }} ({{ .Date.Format "2006-01-02" }})</a></li>
+              {{ end }}
+            </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!--
+vim: ts=2 sw=2 expandtab
+-->

@@ -1,0 +1,52 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+/*
+.facebook-share a {
+    background-color: #425f9c;
+}
+
+.googleplus-share a {
+    background-color: #db4437;
+}
+
+.twitter-share a {
+    background-color: #1da1f2;
+}
+
+.reddit-share a {
+    background-color: #ff4602;
+}
+
+.linkedin-share a {
+    background-color: #1b86bc;
+}
+
+.stumbleupon-share a {
+    background-color: #eb4924;
+}
+
+.share a {
+    padding: 7px 10px;
+    color: #ffffff;
+}
+*/
+/*
+ * vim: sw=4 ts=4 expandtab
+ */
