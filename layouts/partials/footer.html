@@ -1,4 +1,9 @@
-    <script src="/js/bootstrap.min.js"></script>
+<!--
+    {{ if not (eq .Params.type "search") }}
+    <script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+    {{ end }}
+    -->
+    <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
   </body>
 </html>
 <!--

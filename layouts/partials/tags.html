@@ -1,0 +1,16 @@
+<div>
+  <ul class="list-inline">
+  {{ range $tag, $pagelist := .Site.Taxonomies.tags }}
+  {{ $count := len $pagelist }}
+  <li>
+    <i class="fa fa-tags"></i>
+    <!-- <button type="button" class="btn btn-danger btn-sm"> -->
+      {{ $tag }}
+      <span class="badge">{{ $count }}</span>
+      <!-- </button> -->
+  {{ end }}
+  </ul>
+</div>
+<!--
+vim: ts=2 sw=2 expandtab
+-->

@@ -1,0 +1,17 @@
+{{ if isset .Params "tags"}}
+  <ul class="list-inline">
+    {{ range .Params.tags }}
+    <li>
+      <i class="fa fa-tags"></i>
+      <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">
+        <button type="button" class="btn btn-danger btn-xs">
+          {{ . }}
+        </button>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}
+<!--
+vim: ts=2 sw=2 expandtab
+-->
