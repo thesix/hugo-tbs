@@ -18,35 +18,12 @@ body {
 }
 
 /*
-.facebook-share a {
-    background-color: #425f9c;
-}
-
-.googleplus-share a {
-    background-color: #db4437;
-}
-
-.twitter-share a {
-    background-color: #1da1f2;
-}
-
-.reddit-share a {
-    background-color: #ff4602;
-}
-
-.linkedin-share a {
-    background-color: #1b86bc;
-}
-
-.stumbleupon-share a {
-    background-color: #eb4924;
-}
-
-.share a {
-    padding: 7px 10px;
-    color: #ffffff;
+.navbar-nav form {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 */
+
 /*
  * vim: sw=4 ts=4 expandtab
  */
