@@ -1,13 +1,16 @@
 <div>
   <ul class="list-inline">
+  {{ $url := .Site.BaseURL }}
   {{ range $tag, $pagelist := .Site.Taxonomies.tags }}
   {{ $count := len $pagelist }}
   <li>
+    <a href="{{ $url }}tags/{{ $tag }}">
     <i class="fa fa-tags"></i>
     <!-- <button type="button" class="btn btn-danger btn-sm"> -->
-      {{ $tag }}
+    {{ $tag }}
       <span class="badge">{{ $count }}</span>
       <!-- </button> -->
+    </a>
   {{ end }}
   </ul>
 </div>

@@ -1,11 +1,4 @@
 {{ partial "header" . }}
 {{ partial "navbar" . }}
-<ul>
-{{ range $tag, $pagelist := .Site.Taxonomies.tags }}
-<h3>{{ $tag }} {{ len $pagelist }}</h3>
-    {{ range $pagelist.Pages }}
-      {{ .LinkTitle }}
-    {{ end }}
-{{ end }}
-</ul>
+{{ partial "list/list" . }}
 {{ partial "footer" . }}
