@@ -1,0 +1,12 @@
+<!-- i want three content items here -->
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Recent Posts</h1>
+  </div>
+  {{ range first 3 (where .Site.Pages "Type" "post") }}
+    {{ partial "list/single" . }}
+  {{ end }}
+</div>
+<!--
+vim: ts=2 sw=2 expandtab
+-->

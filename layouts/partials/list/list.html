@@ -1,18 +1,18 @@
-  <div class="container  theme-showcase" role="main">
-    <div class="row">
-      <div class="col-md-8 col-xs-12">
-        <div class="page-header">
-          <h1>{{ .Title }}</h1>
-        </div>
-        <div>
-          {{ range .Data.Pages }}
-            {{ partial "list/short" . }}
-          {{ end }}
-        </div>
+<div class="container  theme-showcase" role="main">
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      <div class="page-header">
+        <h1>{{ .Title }}</h1>
       </div>
-        {{ partial "sidebar" . }}
-    </div> <!-- row -->
-  </div>
+      <div>
+        {{ range .Data.Pages }}
+          {{ partial "list/short" . }}
+        {{ end }}
+      </div>
+    </div>
+      {{ partial "sidebar" . }}
+  </div> <!-- row -->
+
 <!--
 vim: ts=2 sw=2 expandtab
 -->

@@ -1,19 +1,11 @@
-    <div class="container theme-showcase" role="main">
-      <div class="jumbotron">
-        <h1>{{ .Site.Data.Jumbotron.title }}</h1>
-        <p>
-          {{ .Site.Data.Jumbotron.content | safeHTML}}
-        </p>
-      </div>
-      <!-- i want three content items here -->
-      <div class="row">
-        {{ range first 3 (where .Site.Pages "Type" "post") }}
-          {{ partial "list/single" . }}
-        {{ end }}
-      </div>
+<div class="container theme-showcase" role="main">
+  <div class="jumbotron">
+    <h1>{{ .Site.Data.Jumbotron.title }}</h1>
+    <p>
+      {{ .Site.Data.Jumbotron.content | safeHTML}}
+    </p>
+  </div>
 
-      <!-- plus a page footer ;) -->
-    </div> <!-- container -->
 <!--
 vim: ts=2 sw=2 expandtab
 -->
