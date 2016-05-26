@@ -1,10 +1,8 @@
 {{ if isset .Params "tags"}}
-  <i class="fa fa-tags"></i>
+    <i class="fa fa-tags fa-lg"></i>
     {{ range .Params.tags }}
-      <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">
-        <button type="button" class="btn btn-danger btn-xs">
-          {{ . }}
-        </button>
+      <a class="btn btn-primary btn-xs" href="{{ "/tags/" | absURL }}{{ . | urlize }}">
+        {{ . }}
       </a>
     {{ end }}
 {{ end }}
