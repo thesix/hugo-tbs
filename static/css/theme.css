@@ -17,6 +17,12 @@ body {
   width: auto;
 }
 
+.footer {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 10px 10px;
+}
+
 /*
 .navbar-nav form {
     padding-top: 10px;
