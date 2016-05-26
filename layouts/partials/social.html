@@ -1,0 +1,41 @@
+<!-- place links in data/social.toml -->
+<div>
+  {{ with .Site.Data.social.twitter }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank">
+      <i class="fa fa-twitter fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.facebook }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank">
+      <i class="fa fa-facebook fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.email }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}">
+      <i class="fa fa-envelope fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.googleplus }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank">
+      <i class="fa fa-goolgeplus fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.linkedin }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank">
+      <i class="fa fa-linkedin fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.youtube }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank">
+      <i class="fa fa-youtube fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.paypal }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank">
+      <i class="fa fa-paypal fa-lg"></i>
+    </a>
+  {{ end }}
+</div>
+<!--
+vim: ts=2 sw=2 expandtab
+-->

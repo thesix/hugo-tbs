@@ -1,0 +1,12 @@
+<div>
+  <a href="#" class="btn btn-primary btn-sm toplink">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    back to top
+  </a>
+  {{ range .Site.Data.Footermenu }}
+  <a href="{{ .url }}">{{ .name }}</a>
+  {{ end }}
+</div>
+<!--
+vim: ts=2 sw=2 expandtab
+-->

@@ -1,4 +1,18 @@
     </div> <!-- container -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-left">
+              {{ partial "footer-menu" . }}
+            </div>
+            <div class="pull-right">
+              {{ partial "social" . }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
   </body>
 </html>
