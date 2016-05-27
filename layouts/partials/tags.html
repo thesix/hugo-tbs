@@ -1,20 +1,21 @@
-<div class="page-header">
-  <h4><i class="fa fa-tags"></i> Tags</h4>
+<div>
+  <h3>
+    <span class="fa fa-tags"></span>
+    Tags
+  </h3>
 </div>
-<ul class="list-inline">
-{{ $url := .Site.BaseURL }}
-{{ range $tag, $pagelist := .Site.Taxonomies.tags }}
-{{ $count := len $pagelist }}
-  <li>
-    <h4>
-  <a href="{{ $url }}tags/{{ $tag }}">
-  {{ $tag }}
-    <span class="badge">{{ $count }}</span>
+  {{ $url := .Site.BaseURL }}
+  {{ range $tag, $pagelist := .Site.Taxonomies.tags }}
+  {{ $count := len $pagelist }}
+  {{ $max := 30 }}
+  {{ if lt $count $max }}
+  <a class="font-{{ add $count 9 }}" href="{{ $url }}tags/{{ $tag }}">
+  {{ else }}
+  <a class="font-38" href="{{ $url }}tags/{{ $tag }}">
+  {{ end }}
+    {{ $tag }}
   </a>
-    </h4>
-  </li>
-{{ end }}
-</ul>
+  {{ end }}
 <!--
 vim: ts=2 sw=2 expandtab
 -->
