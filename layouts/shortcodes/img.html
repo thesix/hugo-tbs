@@ -2,7 +2,11 @@
 {{ $id := .Get "id" }}
 {{ $src := .Get "src" }}
 {{ $title := .Get "title" }}
-<img src="{{ $src }}" title="{{ $title }}" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#{{ $id }}">
+<a href="{{ $src }}">
+  <img src="{{ $src }}" title="{{ $title }}" alt="Image {{ $title }}" class="img-responsive img-thumbnail">
+</a>
+<!--
+<img src="{{ $src }}" title="{{ $title }}" alt="Image {{ $title }}" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#{{ $id }}">
 <div class="modal bs-exapmle-modal-lg" tabindex="-1" id="{{ $id }}" role="dialog" area-labelled-by="{{ $id }}Label">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -11,11 +15,14 @@
         <h4 class="modal-title" id="{{ $id }}Label">{{ $title }}</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ $src }}" title="{{ $title }}" class="img-responsive">
+        <a href="{{ $src }}">
+        <img src="{{ $src }}" title="{{ $title }}" alt="Image {{ $title }}" class="img-responsive">
+        </a>
       </div>
     </div>
   </div>
 </div>
+-->
 <!--
 vim: ts=2 sw=2 expandtab
 -->
