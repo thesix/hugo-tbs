@@ -2,7 +2,7 @@
     <i class="fa fa-tags fa-lg"></i>
     {{ range .Params.tags }}
       <a class="btn btn-primary btn-xs" href="{{ "/tags/" | absURL }}{{ . | urlize }}">
-        {{ . }}
+        {{ lower . }}
       </a>
     {{ end }}
 {{ end }}
