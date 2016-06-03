@@ -3,6 +3,7 @@
     <img class="img-responsive img-rounded" src="/images/avatar-thesix-small.png" alt="Logo">
   </div>
   <hr>
+  {{ if .IsPage }}
   {{ if eq .Type "project" }}
   <p>
     <span class="fa fa-group"></span>
@@ -15,6 +16,7 @@
   {{ end }}
   {{ partial "single/byline" . }}
   {{ partial "single/tags" . }}
+  {{ end }}
   <div>
     {{ partial "share" . }}
   </div>
