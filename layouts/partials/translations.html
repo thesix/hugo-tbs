@@ -1,0 +1,9 @@
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+    <a href="{{ .Permalink }}">{{ i18n "translation" }}</a>
+  {{ end}}
+<hr>
+{{ end }}
+<!--
+vim: ts=2 sw=2 expandtab
+-->

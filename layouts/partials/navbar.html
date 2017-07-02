@@ -13,13 +13,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
           {{ $title := .Title }}
-          {{ range .Site.Data.Menu }}
-            {{ if eq $title .name }}
-            <li class="active">
-            {{ else }}
+          {{ range .Site.Menus.main }}
             <li>
-            {{ end }}
-            <a href="{{ .url | absURL }}">{{ .name }}</a>
+            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
             {{ end }}
             <!--
