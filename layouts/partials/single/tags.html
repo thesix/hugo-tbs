@@ -1,12 +1,11 @@
 {{ if isset .Params "tags"}}
-  <i class="fa fa-tags"></i>
+<h4><span class="fa fa-tags"></span> tagged as</h4>
     {{ range .Params.tags }}
-      <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">
-        <button type="button" class="btn btn-danger btn-xs">
-          {{ . }}
-        </button>
+      <a class="btn btn-primary btn-xs" href="{{ "/tags/" | absURL }}{{ . | urlize }}">
+        {{ lower . }}
       </a>
     {{ end }}
+<hr>
 {{ end }}
 <!--
 vim: ts=2 sw=2 expandtab

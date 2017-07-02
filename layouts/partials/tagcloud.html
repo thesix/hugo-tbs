@@ -1,0 +1,21 @@
+<div>
+  <h3>
+    <span class="fa fa-tags"></span>
+    tagcloud
+  </h3>
+</div>
+  {{ $url := .Site.BaseURL }}
+  {{ range $tag, $pagelist := .Site.Taxonomies.tags }}
+  {{ $count := len $pagelist }}
+  {{ $max := 30 }}
+  {{ if lt $count $max }}
+  <a class="font-{{ add $count 9 }}" href="{{ $url }}tags/{{ $tag }}">
+  {{ else }}
+  <a class="font-38" href="{{ $url }}tags/{{ $tag }}">
+  {{ end }}
+    {{ $tag }}
+  </a>
+  {{ end }}
+<!--
+vim: ts=2 sw=2 expandtab
+-->

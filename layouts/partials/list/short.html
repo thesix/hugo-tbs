@@ -1,15 +1,11 @@
 <div class="col-md-4 col-xs-12">
   <a href="{{ .Permalink }}">
-    <h4>{{ .Title }}</h4>
+    <h5>
+      <span class="fa fa-link" aria-hidden="true"></span>
+      {{ .Title }}
+    </h5>
   </a>
-  {{ partial "single/byline" . }}
-  <p>
-    <a href="{{ .Permalink }}">
-      <button type="button" class="btn btn-success btn-xs">
-        mehr
-      </button>
-    </a>
-  </p>
+  <!-- <span class="fa fa-calendar"></span> {{ .Date.Format "2006-01-02" }}-->
 </div>
 <!--
 vim: ts=2 sw=2 expandtab

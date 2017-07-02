@@ -3,27 +3,14 @@
     <div class="col-md-8 col-xs-12">
       <div class="page-header">
         <h1>{{ .Title }}</h1>
-        <p>
-          <i class="fa fa-group"></i>
-            {{ range .Params.participants }}
-              {{ . }},
-            {{ end }}
-        </p>
-        <p>
-          <i class="fa fa-globe"></i>
-          {{ .Params.location }}
-        </p>
-        {{ partial "single/byline" . }}
-        {{ partial "single/tags" . }}
       </div>
       <div>
-        {{ partial "share" . }}
         {{ .Content }}
       </div>
     </div>
       {{ partial "sidebar" . }}
   </div> <!-- row -->
-</div>
+
 <!--
 vim: ts=2 sw=2 expandtab
 -->

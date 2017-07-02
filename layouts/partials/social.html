@@ -1,0 +1,52 @@
+<!-- place links in data/social.toml -->
+<div>
+  {{ with .Site.Data.social.twitter }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="twitter">
+      <i class="fa fa-twitter fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.github }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="github">
+      <i class="fa fa-github fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.keybase }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="keybase">
+      <!--<i class="fa fa-keybase fa-lg"></i>-->
+      keybase
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.facebook }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="facebook">
+      <i class="fa fa-facebook fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.email }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" title="email">
+      <i class="fa fa-envelope fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.googleplus }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="google+">
+      <i class="fa fa-goolgeplus fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.linkedin }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="linkedin">
+      <i class="fa fa-linkedin fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.youtube }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="youtube">
+      <i class="fa fa-youtube fa-lg"></i>
+    </a>
+  {{ end }}
+  {{ with .Site.Data.social.paypal }}
+    <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" title="paypal">
+      <i class="fa fa-paypal fa-lg"></i>
+    </a>
+  {{ end }}
+</div>
+<!--
+vim: ts=2 sw=2 expandtab
+-->

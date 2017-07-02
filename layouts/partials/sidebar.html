@@ -1,10 +1,26 @@
 <div class="col-md-4 col-xs-12">
-  <div class="row">
-    <img src="/images/avatar-thesix-small.png" alt="Logo">
-  </div>
   <div>
-    {{ partial "tags" . }}
+    <img class="img-responsive img-rounded" src="/images/avatar-thesix-small.png" alt="Logo">
   </div>
+  <hr>
+  {{ if .IsPage }}
+  {{ if eq .Type "project" }}
+  <p>
+    <span class="fa fa-group"></span>
+      {{ delimit .Params.participants ", " " and "}}
+  </p>
+  <p>
+    <span class="fa fa-globe"></span>
+    {{ .Params.location }}
+  </p>
+  {{ end }}
+  {{ partial "single/byline" . }}
+  {{ partial "single/tags" . }}
+  {{ end }}
+  <div>
+    {{ partial "share" . }}
+  </div>
+  {{ partial "tagcloud" . }}
 </div>
 <!--
 vim: ts=2 sw=2 expandtab

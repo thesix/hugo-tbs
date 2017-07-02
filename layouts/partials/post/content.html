@@ -3,11 +3,8 @@
     <div class="col-md-8 col-xs-12">
       <div class="page-header">
         <h1>{{ .Title }}</h1>
-        {{ partial "single/byline" . }}
-        {{ partial "single/tags" . }}
       </div>
       <div>
-        {{ partial "share" . }}
         {{ .Content }}
       </div>
     </div>
