@@ -2,8 +2,7 @@
   <div class="row">
     <div class="col-md-8 col-xs-12">
       <div class="page-header">
-        <!-- <h1>{{ .Title }} ({{ len .Data.Pages }})</h1>-->
-        {{ T (printf "section_%s" (.Title|lower)) }}
+        <h1>{{ T (printf "section_%s" (.Title|lower)) }} ({{ len .Data.Pages }})</h1>
       </div>
       <div>
         {{ range .Data.Pages }}
