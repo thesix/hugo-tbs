@@ -1,7 +1,26 @@
+#
+# English translations
+#
 [translation]
-other = "Deutsche Version vorhanden"
+other = "DE"
 
-[posts]
+[tagcloud]
+other = "tagcloud"
+
+# sections
+[section_posts]
 other = "Posts"
+
+[section_projects]
+other = "Projects"
+
+[section_tags]
+other = "Tags"
+
+[section_art]
+other = "art"
+
+[section_wordpress]
+other = "wordpress"
 
 # EOF

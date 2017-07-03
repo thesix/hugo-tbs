@@ -1,7 +1,27 @@
+#
+# Deutsche Übersetzungen
+#
 [translation]
-other = "English version available"
+other = "EN"
 
-[posts]
+[tagcloud]
+other = "Schlagwortwolke"
+
+# sections
+[section_posts]
 other = "Artikel"
 
+[section_projects]
+other = "Projekte"
+
+[section_tags]
+other = "Schlagwörter"
+
+[section_art]
+other = "Kunst"
+
+[section_wordpress]
+other = "Wordpress"
+
+#
 # EOF
