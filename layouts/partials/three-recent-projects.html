@@ -1,7 +1,7 @@
 <!-- i want three content items here -->
 <div class="row">
   <div class="col-sm-12">
-    <h1>Recent Projects</h1>
+    <h1>{{ i18n "recent_projects" . }}</h1>
   </div>
   {{ range first 3 (where .Site.Pages "Type" "project") }}
     {{ partial "list/single" . }}

@@ -4,10 +4,21 @@
 [translation]
 other = "EN"
 
+#
+# menu
+#
+[search]
+other = "Suche"
+
+#
+# sidebar
+#
 [tagcloud]
 other = "Schlagwortwolke"
 
+#
 # sections
+#
 [section_posts]
 other = "Artikel"
 
@@ -24,4 +35,12 @@ other = "Kunst"
 other = "Wordpress"
 
 #
+# index page
+#
+[recent_posts]
+other = "Neueste Artikel"
+
+[recent_projects]
+other = "Neueste Projekte"
+
 # EOF

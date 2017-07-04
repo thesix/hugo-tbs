@@ -4,10 +4,21 @@
 [translation]
 other = "DE"
 
+#
+# menu
+#
+[search]
+other = "search"
+
+#
+# sidebar
+#
 [tagcloud]
 other = "tagcloud"
 
+#
 # sections
+#
 [section_posts]
 other = "Posts"
 
@@ -22,5 +33,14 @@ other = "art"
 
 [section_wordpress]
 other = "wordpress"
+
+#
+# index page
+#
+[recent_posts]
+other = "Recent Posts"
+
+[recent_projects]
+other = "Recent Projects"
 
 # EOF
