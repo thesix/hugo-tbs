@@ -25,6 +25,9 @@ other = "Teilen"
 [byline]
 other = "{{ .Date.Format \"2006-01-02\" }} von {{ .Params.author }}"
 
+[participants_and]
+other = " und "
+
 #
 # sections
 #

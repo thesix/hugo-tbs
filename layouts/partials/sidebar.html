@@ -7,7 +7,8 @@
   {{ if eq .Type "project" }}
   <p>
     <span class="fa fa-group"></span>
-      {{ delimit .Params.participants ", " " and "}}
+    {{ $and := i18n "participants_and" }}
+    {{ delimit .Params.participants ", " $and  }}
   </p>
   <p>
     <span class="fa fa-globe"></span>
@@ -17,10 +18,8 @@
   {{ partial "single/byline" . }}
   {{ partial "single/tags" . }}
   {{ end }}
-  <div>
     {{ partial "share" . }}
-  </div>
-  {{ partial "tagcloud" . }}
+    {{ partial "tagcloud" . }}
 </div>
 <!--
 vim: ts=2 sw=2 expandtab
