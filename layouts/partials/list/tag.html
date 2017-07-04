@@ -3,7 +3,7 @@
     <div class="col-md-8 col-xs-12">
       <div class="page-header">
         <!-- <h1>{{ .Title }} ({{ len .Data.Pages }})</h1>-->
-        {{ .Title }}
+        {{ .Title | lower }}
       </div>
       <div>
         {{ range .Data.Pages }}
