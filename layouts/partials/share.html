@@ -1,6 +1,6 @@
 {{ if .IsPage }}
 {{ if or (eq .Type "post") (eq .Type "project") }}
-<h4><span class="fa fa-share-alt"></span> share this {{ .Type }}</h4>
+<h4><span class="fa fa-share-alt"></span> {{ i18n "share_this" . }}</h4>
 <a class="btn btn-primary btn-xs" target="_blank" href="http://www.facebook.com/sharer.php?u={{ .Permalink }}">
   <span class="fa fa-facebook"></span>
 </a>

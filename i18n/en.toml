@@ -16,6 +16,15 @@ other = "search"
 [tagcloud]
 other = "tagcloud"
 
+[tagged_as]
+other = "tagged as"
+
+[share_this]
+other = "share"
+
+[byline]
+other = "{{ .Date.Format \"2006-01-02\" }} by {{ .Params.author }}"
+
 #
 # sections
 #

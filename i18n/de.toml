@@ -16,6 +16,15 @@ other = "Suche"
 [tagcloud]
 other = "Schlagwortwolke"
 
+[tagged_as]
+other = "Schlagworte"
+
+[share_this]
+other = "Teilen"
+
+[byline]
+other = "{{ .Date.Format \"2006-01-02\" }} von {{ .Params.author }}"
+
 #
 # sections
 #
