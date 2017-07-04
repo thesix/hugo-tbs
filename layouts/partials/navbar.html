@@ -12,18 +12,25 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          {{ $title := .Title }}
-          {{ range .Site.Menus.main }}
+            {{ $title := .Title }}
+            {{ range .Site.Menus.main }}
             <li>
-            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
             {{ end }}
             {{ if .IsTranslated }}
-              <li>
-                {{ range .Translations }}
-                <a href="{{ .Permalink }}">{{ i18n "translation" }}</a>
-                {{ end }}
-               </li>
+            <!-- this needs to be styled right
+            <li>
+              <a class="active-lang" href="">
+                {{ .Lang | upper }}
+              </a>
+            </li>
+            -->
+            {{ range .Translations }}
+            <li>
+              <a href="{{ .Permalink }}">{{ i18n "translation" }}</a>
+            </li>
+            {{ end }}
             {{ end }}
             <!--
             <li class="dropdown">

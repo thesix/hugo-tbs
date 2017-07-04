@@ -52,4 +52,10 @@ other = "Recent Posts"
 [recent_projects]
 other = "Recent Projects"
 
+#
+# footer
+#
+[back_to_top]
+other = "back to top"
+
 # EOF

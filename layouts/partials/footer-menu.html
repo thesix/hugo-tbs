@@ -1,7 +1,7 @@
 <div>
   <a href="#" class="btn btn-primary btn-sm toplink">
     <span class="glyphicon glyphicon-chevron-up"></span>
-    back to top
+    {{ i18n "back_to_top" . }}
   </a>
   {{ range .Site.Data.Footermenu }}
   <a href="{{ .url }}">{{ .name }}</a>

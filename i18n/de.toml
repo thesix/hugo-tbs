@@ -52,4 +52,10 @@ other = "Neueste Artikel"
 [recent_projects]
 other = "Neueste Projekte"
 
+#
+# footer
+#
+[back_to_top]
+other = "Zum Seitenanfang"
+
 # EOF

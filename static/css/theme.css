@@ -200,6 +200,9 @@ body {
     box-sizing: content-box;
 }
 
+a.active-lang {
+    font-weight: bold;
+}
 /*
 .navbar-nav form {
     padding-top: 10px;
