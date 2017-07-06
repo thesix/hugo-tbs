@@ -4,7 +4,7 @@
     <h1>{{ i18n "recent_projects" . }}</h1>
   </div>
   {{ range first 3 (where .Site.Pages "Type" "project") }}
-    {{ partial "list/single" . }}
+    {{ partial "list/short-index" . }}
   {{ end }}
 </div>
 <!--

@@ -1,4 +1,4 @@
-# hugo-tbs
+# hugo-theme-tbs
 
 A theme for the hugo static website generator.  See it in action at [my
 website][thesix].  Slightly more info is currently available at the [project

@@ -61,4 +61,10 @@ other = "Recent Projects"
 [back_to_top]
 other = "back to top"
 
+#
+# list overview
+#
+[read_more]
+other = "read more"
+
 # EOF

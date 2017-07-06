@@ -211,5 +211,65 @@ a.active-lang {
 */
 
 /*
+ * sidebar
+ */
+
+div.byline {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 24px 0;
+    padding: 6px 6px 24px 0;
+}
+
+/*
+ * styles for list overview
+ */
+
+div.list-item-box {
+    border: solid 1px #eee;
+    height: 160px;
+    margin: 0px 12px 24px 0px;
+    border-radius: 5px;
+}
+
+div.list-item-summary {
+    margin: 12px 6px 12px 6px;
+}
+
+h5.list-item-title {
+    margin: 12px 6px 12px 6px;
+    background-color: #cfcfcf;
+    line-height: 24px;
+    padding: 0 0 6px 6px;
+}
+
+/*
+ * styles for list items on index page
+ */
+div.index-item-box {
+    border: solid 1px #eee;
+    min-height: 160px;
+    margin: 0px 12px 24px 0px;
+    border-radius: 5px;
+}
+
+div.index-item-summary {
+    margin: 12px 6px 12px 6px;
+}
+
+h4.index-item-title {
+    margin: 12px 6px 12px 6px;
+    background-color: #cfcfcf;
+    line-height: 24px;
+    padding: 0 0 6px 6px;
+}
+
+div.index-item-box div.byline {
+    border: none;
+    padding: 0;
+    margin: 12px 6px 12px 6px;
+
+}
+
+/*
  * vim: sw=4 ts=4 expandtab
  */

@@ -1,11 +1,20 @@
 <div class="col-md-4 col-xs-12">
+  <div class="list-item-box">
+    <a href="{{ .Permalink }}">
+      <h5 class="list-item-title">{{ .Title | truncate 25 " ..."}}</h5>
+    </a>
+    <div class="list-item-summary">
+      {{ .Summary | truncate 96 " ..." }}
+    </div>
+  </div>
+  <!--
   <a href="{{ .Permalink }}">
     <h5>
       <span class="fa fa-link" aria-hidden="true"></span>
       {{ .Title }}
     </h5>
   </a>
-  <!-- <span class="fa fa-calendar"></span> {{ .Date.Format "2006-01-02" }}-->
+  -->
 </div>
 <!--
 vim: ts=2 sw=2 expandtab

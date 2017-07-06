@@ -61,4 +61,10 @@ other = "Neueste Projekte"
 [back_to_top]
 other = "Zum Seitenanfang"
 
+#
+# list overview
+#
+[read_more]
+other = "weiterlesen"
+
 # EOF
