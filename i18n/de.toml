@@ -2,13 +2,19 @@
 # Deutsche Übersetzungen
 #
 [translation]
-other = "EN"
+other = "read in english"
 
 #
 # menu
 #
 [search]
 other = "Suche"
+
+[posts]
+other = "Artikel"
+
+[projects]
+other = "Projekte"
 
 #
 # sidebar
@@ -31,8 +37,14 @@ other = " und "
 #
 # sections
 #
+[section_post]
+other = "Artikel"
+
 [section_posts]
 other = "Artikel"
+
+[section_project]
+other = "Projekte"
 
 [section_projects]
 other = "Projekte"
