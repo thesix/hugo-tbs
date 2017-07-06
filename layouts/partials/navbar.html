@@ -13,24 +13,27 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {{ $title := .Title }}
+            {{ $section := i18n (printf "section_%s" .Section) }}
             {{ range .Site.Menus.main }}
             <li>
+              {{ if or (eq $section .Name) (eq $title .Name) }}
+              <a id="active-page" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              {{ else }}
               <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              {{ end }}
             </li>
             {{ end }}
             {{ if .IsTranslated }}
-            <!-- this needs to be styled right
             <li>
-              <a class="active-lang" href="">
-                {{ .Lang | upper }}
-              </a>
+              <div>
+                <span id="active-lang">{{ .Lang }}</span>
+                {{ range .Translations }}
+                <a href="{{ .Permalink }}">
+                  {{ .Lang }}
+                </a>
+              </div>
+              {{ end }}
             </li>
-            -->
-            {{ range .Translations }}
-            <li>
-              <a href="{{ .Permalink }}">{{ i18n "translation" }}</a>
-            </li>
-            {{ end }}
             {{ end }}
             <!--
             <li class="dropdown">
