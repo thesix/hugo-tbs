@@ -1,0 +1,11 @@
+{{ if .IsTranslated }}
+<div class="page-translated">
+  {{ range .Translations }}
+  <a href="{{ .Permalink }}">{{ i18n "translation" }}</a>
+  {{ end }}
+</div>
+{{ end }}
+
+<!--
+  vim: tw=76 sw=2 ts=2 expandtab
+-->
