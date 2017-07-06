@@ -1,0 +1,14 @@
+<div class="col-md-4 col-xs-12">
+  <div class="index-item-box">
+    <a href="{{ .Permalink }}">
+      <h4 class="index-item-title">{{ .Title | truncate 25 " ..."}}</h4>
+    </a>
+    <div class="index-item-summary">
+      {{ .Summary | truncate 256 " ..." }}
+    </div>
+      {{ partial "single/byline" . }}
+  </div>
+</div>
+<!--
+vim: ts=2 sw=2 expandtab
+-->
