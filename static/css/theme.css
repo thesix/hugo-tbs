@@ -200,15 +200,46 @@ body {
     box-sizing: content-box;
 }
 
-a.active-lang {
-    font-weight: bold;
+/*
+ * navbar
+ */
+
+.navbar-nav > li > div,
+.navbar-nav > li > div > a {
+    padding: 15px 0 15px 0;
+    color: #d0d0d0;
+    text-decoration: none;
 }
+
+.navbar-nav > li > div > a:focus,
+.navbar-nav > li > div > a:hover {
+    color: #fff;
+}
+
+#active-lang {
+    text-decoration: underline;
+    color: #fff;
+}
+
+#active-page {
+    text-decoration: underline;
+    color: #fff;
+}
+
 /*
 .navbar-nav form {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 */
+
+/*
+ * single page
+ */
+div.page-translated {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 20px 0;
+}
 
 /*
  * sidebar
