@@ -1,0 +1,47 @@
+baseurl = "http://example.com/"
+title = "My Hugo Site"
+theme = "hugo-tbs"
+
+defaultContentLanguage = "de"
+EnableMissingTranslationPlaceholders = true
+
+[Languages]
+
+[Languages.de]
+weight = 1
+
+[[Languages.de.menu.main]]
+  name = "Artikel"
+  url = "/post/"
+  weight = 3
+
+[[Languages.de.menu.main]]
+  name = "Projekte"
+  url = "/project/"
+  weight = 4
+
+[Languages.en]
+weight = 2
+
+[[Languages.en.menu.main]]
+  name = "posts"
+  url = "/post/"
+  weight = 3
+
+[[Languages.en.menu.main]]
+  name = "projects"
+  url = "/project/"
+  weight = 4
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+    project = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+
+[params]
+    keywords = ["Your", "Keywords", "Here"]
+    author = "Your Name"
+
