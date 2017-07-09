@@ -1,7 +1,7 @@
 +++
 title = ""
-tags = ["de|en"]
+tags = []
 slug = ""
-author = "Thesix"
+author = ""
 draft = true
 +++
